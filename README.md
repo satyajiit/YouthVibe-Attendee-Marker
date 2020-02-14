@@ -2,7 +2,7 @@
 
 Download from release or Drive :
 
-[![Drive](/Screen/drive.jpg)](https://play.google.com/store/apps/details?id=com.dyc.youthvibe)
+[![Drive](/Screen/drive.jpg)](http://bit.ly/YvMarker3)
 
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-YES-blueviolet.svg)](#)
