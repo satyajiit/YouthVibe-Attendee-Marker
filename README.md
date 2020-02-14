@@ -18,14 +18,29 @@ Download from release or Drive :
 
 ## Features & Note :
 
-* Auto Check for Update on App Start
-* App Size < 2.2 MB
-* Good UI 💖
-* Loads data from JSON 👌 
-* Blogs Section for Fest. 😇
-* Profile Page. 🌀
-* Detailed inforamtion about each event. 🎀
-* Backed with Firebase - Firestore and Storage 🙂
+* Scan with QR
+* Manual with Hash
+* Google SignIn Auth
+* Auth Allowed for specific users
+* Logs User info to Firestore
+
+### Preview Sample of Firebase rules :
+
+```
+    match /keys/{keys} {
+    
+    allow write: if false;
+    allow read: if request.auth.uid == get(/databases/$(database)/documents/keys/rules).data.admin
+    
+    }
+    
+     match /authenticated_users/{authenticated_users} {
+    
+    allow write: if false;
+    allow read: if request.auth.uid != null
+    
+    }
+```
 
 #### SUPPORT THE WORK & DEV
 
