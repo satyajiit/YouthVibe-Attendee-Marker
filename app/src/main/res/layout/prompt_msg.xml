@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/padding_10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/material_red"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FINAL CONFIRMATION"
+        android:fontFamily="@font/cav"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:padding="@dimen/padding_10"
+        android:textColor="@color/material_red"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/material_red"/>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:hint="ROOM NUMBER"
+        android:layout_margin="10dp"
+        app:errorEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextRoom"
+            style="@style/modifiedEditText"
+            android:fontFamily="@font/cav"
+            android:inputType="text"
+            android:drawableEnd="@drawable/ic_room_black_24dp"
+            android:maxLines="1"
+            android:textSize="15sp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:padding="@dimen/padding_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cav"
+        android:text="*Leave Blank if Room number is not required."/>
+
+    <Button
+        android:layout_marginTop="@dimen/padding_10"
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONFIRM"
+        android:layout_marginBottom="@dimen/padding_10"
+        android:fontFamily="@font/cav"
+        android:layout_gravity="center"
+        android:background="@drawable/oval_btn"
+        android:textColor="@color/white"/>
+
+
+</LinearLayout>

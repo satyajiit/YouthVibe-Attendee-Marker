@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/toolbar"
+        android:id="@+id/tool"
+        />
+
+
+
+    <LinearLayout
+        android:layout_below="@id/tool"
+        android:layout_marginTop="-4dp"
+        android:id="@+id/layer1"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/bg_g">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cav"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:text="Hi , Welcome Back!"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_marginTop="5dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/sign_in_google"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_width="match_parent"
+        app:buttonSize="standard"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

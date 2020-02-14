@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/toolbar"
+        android:id="@+id/tool"
+        />
+
+
+
+    <FrameLayout
+        android:layout_below="@id/tool"
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_above="@id/toolbar_shadow2"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/toolbar_shadow2"
+        android:layout_above="@id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/shadow" />
+
+
+
+
+    <me.ibrahimsn.lib.NiceBottomBar
+        android:id="@+id/bottomBar"
+        android:elevation="10dp"
+        app:indicatorInterpolator="anticipateOvershoot"
+        android:layout_alignParentBottom="true"
+        app:textColorActive="@color/material_red"
+        app:indicatorColor="@color/material_red"
+        app:itemFontFamily="@font/cav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:menu="@menu/bottom_menu" />
+
+
+
+
+</RelativeLayout>

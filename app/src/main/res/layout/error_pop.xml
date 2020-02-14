@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/material_red"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lv"
+        android:layout_marginTop="10dp"
+        android:padding="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:lottie_autoPlay="true"
+        android:baselineAlignBottom="true"
+        app:lottie_loop="true"
+        app:lottie_fileName="fail.json"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:textSize="19sp"
+        android:text="You are not authenticated as Admin."
+        android:fontFamily="@font/cav"/>
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/oval_btn"
+        android:text="Try with different account"
+        android:textColor="@color/white"/>
+
+
+</LinearLayout>
