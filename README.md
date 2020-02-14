@@ -19,7 +19,7 @@ Download from release or Drive :
 [![forthebadge](https://forthebadge.com/images/badges/powered-by-electricity.svg)](#)
 [![forthebadge](https://forthebadge.com/images/badges/ages-12.svg)](#)
 
-* LPU's Global fest YouthVibe Official Android App
+* LPU's Global fest YouthVibe Official Attendance Marker 
 
 ## Features & Note :
 
